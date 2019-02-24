@@ -9,4 +9,5 @@ db.init_app(application)
 def create_tables():
     db.create_all()
 
-
+if __name__=="__main__":
+    application.run(port=5171, debug=True)
